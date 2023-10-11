@@ -18,7 +18,8 @@
 
 # Run migrations
 
-```python load_env.py
+```
+python load_env.py
 cd src
 flask db init
 flask db migrate -m "migration name"
