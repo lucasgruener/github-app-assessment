@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GitHub User Info</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-heading">GitHub User Info</h1>
+        <form method="POST" class="input-form">
+            <label for="username">GitHub Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+        {% if user_data %}
+        <h2 class="info-heading">User Information</h2>
+        <p>User is <span class="user-status">{{ "new" if is_new_user else "existing" }}.</span></p>
+        <ul class="repository-list">
+            {% for repo in user_data %}
+            <li class="repository">
+                <strong>Name:</strong> {{ repo.name }}<br>
+                <strong>URL:</strong> <a href="{{ repo.html_url }}" class="repository-link">{{ repo.html_url }}</a><br>
+                <strong>Description:</strong> {{ repo.description }}<br>
+                <strong>Language:</strong> {{ repo.language }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+       
+
+    </div>
+</body>
+
+</html>
