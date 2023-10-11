@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.main-heading {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 0;
+}
+
+.input-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-heading {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.user-status {
+    font-weight: bold;
+}
+
+.repository-list {
+    list-style: none;
+    padding: 0;
+}
+
+.repository {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.repository-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.repository-link:hover {
+    text-decoration: underline;
+}
