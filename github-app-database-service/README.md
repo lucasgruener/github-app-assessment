@@ -1,10 +1,10 @@
-# API to handle everything related to the database, queries, updates and new entries
+# API service responsible for everything related to the database, queries, updates and new entries
 
 # HOW TO RUN:
 
 ```cd github-app-database-service```
 
-# Create Virtual Env (if not created)
+# Create Virtual Env
 
 ```python -m venv venv```
 
