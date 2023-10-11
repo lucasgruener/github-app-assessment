@@ -1,4 +1,4 @@
-# Frontend application for users to interact with the backend and access data
+# Frontend application for users to interact with the application and access data
 
 # HOW TO RUN:
 

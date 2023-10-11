@@ -1,8 +1,8 @@
-# Main API responsible for receiving user requests and retrieve the information about users
+# Worker to continuously fetch data from users already added to the database
 
 # HOW TO RUN:
 
-```cd github-app-main-api```
+```cd github-app-worker```
 
 # Create Virtual Env
 
@@ -16,6 +16,6 @@
 
 ```pip install -r requirements.txt```
 
-# Run application:
+# Run worker:
 
-```python src/app.py```
+```python src/scheduler.py```
